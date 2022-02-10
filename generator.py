@@ -36,7 +36,8 @@ for symbol in ["+", "-", "/", "*"]:
                            f"(a, symbol, b, answer) VALUES ({a}, \"{symbol}\", {b}, \"{answer}\")"
                            )
 
-        print(f"({a} / {max_num}) for {symbol}")
+        print(f"({a} / {max_num}) for {symbol} ", end="\r")
     con.commit()
+    print("")  # adding next line
 cursor.close()
 con.close()
