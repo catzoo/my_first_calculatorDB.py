@@ -5,12 +5,16 @@ it can calculate any value between 0 and 50. But I didn't like that limit and if
 This calculator is an improvement from `my_first_calculator.py` to where it accepts negatives and decimals to find the answer. The current `calc.db` file only accept values from -200 to 200 (no decimal), if you want to expand this you can regenerate the file.
 
 ## generate.py
-This script generates the DB and accept decimals as well. Just note, generating with decimals would make the file big. Generating a db with the range -250.0 to -250.9 will make over 100,000,000 rows with a 3.8 GB file.
+This script generates the database and accept decimals as well. Just note, generating with decimals would make the file big. I generated the DB from `-250.0` to `250.9` and made a file that is over 3 GB big.
 
-You can generate this file with the settings:
-- Min Value: -250
-- Max Value: 250
-- Step: 0.1
+If you want to regenerate the DB, here are the current settings you can mess with.
+| Setting | Description | Example |
+| :---: | :--- | :---: |
+| Min Value | The minimum value to support | -50 |
+| Max Value | The maximum value to support. With decimals this would increase it by .9 | 50 |
+| Step | For loop stepping value | 0.1 |
+
+The example values would generate a DB from `-50.0` to `-50.9`
 
 ------------------------
 ###### Note: this project works, but its made as a Joke.
