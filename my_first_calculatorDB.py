@@ -1,4 +1,3 @@
-from pathlib import Path
 import sqlite3
 
 DB_FILE = "calc.db"
